@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#25A095"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up!"
+        android:textSize="25sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:hint="Name"
+        android:background="@android:drawable/editbox_background"/>
+
+
+    <EditText
+        android:id="@+id/et_studentid"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:hint="Student Id"
+        android:background="@android:drawable/editbox_background"/>
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginTop="8dp"
+        android:hint="Email"/>
+
+
+     <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+
+         >
+
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/et_password"
+             android:inputType="textPassword"
+             android:textSize="22sp"
+             android:padding="12dp"
+             android:textColor="@color/black"
+             android:layout_marginTop="8dp"
+             android:background="@android:drawable/editbox_background"
+             android:hint="password"/>
+
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_confirmpassword"
+            android:inputType="textPassword"
+            android:textSize="22sp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="confirm password"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Spinner
+        android:id="@+id/spinner_item"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:backgroundTint="#FF5722"/>
+
+    <LinearLayout
+        android:id="@+id/linear_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
