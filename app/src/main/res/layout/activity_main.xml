@@ -49,7 +49,7 @@
         android:textColor="@color/black"
         android:padding="12dp"
         android:layout_marginTop="8dp"
-        android:hint="Student Id"
+        android:hint="Student ID"
         android:background="@android:drawable/editbox_background"/>
 
 
